@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+body {
+  font-family: "Segoe UI", "Noto Sans JP", sans-serif;
+  background-color: #f8f9fa;
+  line-height: 1.7;
+}
+
+/* ナビゲーションバーの余白調整（固定ヘッダー対策） */
+main,
+header {
+  margin-top: 72px;
+}
+
+/* 見出し共通 */
+h1,
+h2,
+h3 {
+  letter-spacing: 0.05em;
+}
+
+/* カードのホバー演出 */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* キャラクター画像サイズ統一 */
+.card-img-top {
+  object-fit: cover;
+  height: 220px;
+}
+
+/* フッター */
+footer {
+  font-size: 0.9rem;
+}
+
+/* リンクの装飾を抑える */
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* トップページのヒーローエリア */
+.hero {
+  background: url("../images/lol-hero.jpg") center / cover no-repeat;
+  color: #fff;
+  padding: 120px 0;
+}
+
+/* 半透明背景 */
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 60px;
+  border-radius: 8px;
+}
